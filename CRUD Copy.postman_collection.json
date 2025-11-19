@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "137b1d89-e94d-4e2b-bc13-5f2626ce48d3",
+		"name": "CRUD Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49952755",
+		"_collection_link": "https://nobinhalder-3986064.postman.co/workspace/Nobin-Halder's-Workspace~45fa1666-bc24-44e7-8610-f0289927bace/collection/49952755-137b1d89-e94d-4e2b-bc13-5f2626ce48d3?action=share&source=collection_link&creator=49952755"
+	},
+	"item": [
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"ProductName\": \"ef\",\r\n        \"ProductCode\": 256,\r\n        \"Img\": \"dwq\",\r\n        \"Qty\": 45,\r\n        \"UnitPrice\": 14,\r\n        \"TotalPrice\": 888\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/CreateProduct",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"CreateProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"ProductName\": \"rew\",\r\n        \"ProductCode\": 23345243,\r\n        \"Img\": \"acbc\",\r\n        \"Qty\": 123,\r\n        \"UnitPrice\": 123,\r\n        \"TotalPrice\": 123\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/UpdateProduct/65abe919f68794d36c5b7ffa",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"UpdateProduct",
+						"65abe919f68794d36c5b7ffa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/ReadProduct",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"ReadProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/ReadProductById/65abeaddf211d368b013a630",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"ReadProductById",
+						"65abeaddf211d368b013a630"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/DeleteProduct/65abe8b31e27100ba914f2e5",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"DeleteProduct",
+						"65abe8b31e27100ba914f2e5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "http://35.73.30.144:2008/api/v1",
+			"type": "string"
+		}
+	]
+}
